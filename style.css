@@ -1,0 +1,36 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  height:500px;
+  width:500px;
+  display:flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+  align-content: space-between;
+}
+.btn{
+  height:200px;
+  width:200px;
+  border-radius: 20%;
+  border: 10px solid black;
+
+}
+.red{
+  background-color:#e32b62;
+}
+.green{
+  background-color: #46a6c3;
+}
+.yellow{
+  background-color:#fb9332 ;
+}
+.purple{
+  background-color: #688dfd;
+}
+.flash{
+  background-color: white;;
+}
