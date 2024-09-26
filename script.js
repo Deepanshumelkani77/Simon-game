@@ -6,7 +6,8 @@ let start=false;
 let level=0;
 h2=document.querySelector('h2');
 //start the game=press any key
-document.addEventListener('keypress',function(){
+let b=document.querySelector(".b");
+b.addEventListener('click',function(){
 if(start==false)
 {
     console.log("game is started");
@@ -14,8 +15,11 @@ if(start==false)
    levelup();
     
 }
-  
-});
+})
+
+
+
+
 
 
 function flashbtn(btn){
@@ -56,7 +60,7 @@ function checkseq(idx){
     
   }
   else{
-    h2.innerHTML=`Game Over! your score was<b>${level}</b> Press any key to restart the game`;
+    h2.innerHTML=`Game Over! your score was<b>=${level}</b> Press start button to restart the game`;
     reset();
   }
 }
